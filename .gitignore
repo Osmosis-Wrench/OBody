@@ -1,7 +1,10 @@
 /meta.ini
 /.vscode
 *.zip
-*.pex
 *.bat
 *.ppj
 SkyrimSE.code-workspace
+scripts/OBody_MCM.pex
+scripts/OBodyNative.pex
+scripts/OBodyPlayerAliasScript.pex
+scripts/OBodyScript.pex

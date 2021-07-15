@@ -1,6 +1,6 @@
 ScriptName OBodyScript extends Quest
 
-import outils 
+;import outils 
 
 bool Property ORefitEnabled
 	bool Function Get()
@@ -46,8 +46,8 @@ Event OnInit()
 	Int maleSize = OBodyNative.GetMaleDatabaseSize()
 	Debug.Notification("OBody Installed: [F: " + femaleSize + "] [M: " + maleSize + "]")
 
-	OUtils.getOStim().RegisterForGameLoadEvent(self)
-	RegisterForOUpdate(self)
+	;OUtils.getOStim().RegisterForGameLoadEvent(self)
+	;RegisterForOUpdate(self)
 
 	OnLoad()
 EndEvent
@@ -131,4 +131,8 @@ Function ShowPresetMenu(Actor act)
 		OBodyNative.ApplyPresetByName(act, result)
 		Console("Applying: " + result)
 	EndIf
+EndFunction
+
+Function Console(String In) Global
+	MiscUtil.PrintConsole("OBody: " + In)
 EndFunction
